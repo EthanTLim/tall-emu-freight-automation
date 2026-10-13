@@ -9,7 +9,7 @@ Automates updating freight costs in Tall Emu CRM from Team Global Express (iPEC)
 3. Enters the freight cost into the Connote Number field
 4. Updates the Freight TE line item cost
 5. Fills in the tracking number if the field is blank
-6. Handles Lactalis invoices with a special cost adjustment formula
+6. Applies a cost adjustment formula to invoices that need special handling
 7. Archives processed PDFs with a summary report
 
 ## Setup
@@ -36,7 +36,7 @@ TALL_EMU_PASSWORD=yourpassword
 python main.py
 
 # Process a specific PDF
-python main.py invoices/IPec_0433-80332442_10225416.pdf
+python main.py invoices/example-invoice.pdf
 
 # Parse only — don't touch Tall Emu
 python main.py --dry-run
